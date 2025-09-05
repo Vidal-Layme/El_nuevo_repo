@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css.css">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url(que-es-la-informatica.webp)no-repeat ;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .cuadro{
+        width: 420px;
+        background: transparent;
+        border: 2px solid rgba(225, 225, 225, .2);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        color: #fff;
+        border-radius: 10px;
+        padding: 30px 40px;
+    }
+    
+    .cuadro h1{
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .cuadro .introducir{
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px 0;
+    }
+    
+    .introducir input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(225, 255, 225, .2);
+        border-radius: 40px;
+        font-size: 16px;
+        color: #fff;
+        padding: 20px 45px 20px 20px;
+    }
+    
+    .introducir input::placeholder{
+        color: #fff;
+    }
+    
+    .introducir i{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+    }
+    
+    .cuadro .recuerda{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14.5px;
+        margin: -15px 0 15px;
+    }
+    
+    .recuerda label input{
+        accent-color: #fff;
+        margin-right: 3px;
+    
+    }
+    
+    .recuerda a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .recuerda a:hover{
+        text-decoration: underline;
+    }
+    
+    .cuadro .boton{
+        width: 100%;
+        height: 45px;
+        background: #fff;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        font-size: 16px;
+        color: #333;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    
+    .cuadro .link_registro{
+        font-size: 14.5px;
+        text-align: center;
+        margin: 20px 0 15px;
+    
+    }
+    
+    .link_registro p a{
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
+    .link_registro p a:hover{
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div class="cuadro">
+        <form action="">
+            <h1>Inicio de Sesión</h1>
+            <div class="introducir">
+                <input type="text" placeholder="Usuario" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="introducir">
+                <input type="text" placeholder="Contraseña" required> 
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="recuerda">
+                <label><input type="checkbox">recuerdame</label>
+                <a href="#">¿olvidaste tu contraseña?</a>
+            </div>
+            <button type="submit" class="boton">Iniciar Sesión</button>
+            <div class="link_registro"><p>¿No tienes una cuenta? <a href="#">Registrate</a></p></div>
+        </form>
+    </div>
+</body>
+</html>
